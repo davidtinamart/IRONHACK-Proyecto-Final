@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Outfit:wght@100..900&display=swap');
+
+body {
+  font-family: 'Fjalla One';
+  background-image: url('imagenes/fondo.png');
+  background-size: cover; 
+  background-position: center;
+}
+
+  /* TITULO */
+
+  h1 {
+    text-align: center;
+    color: white;
+  }
+
+  /* DESCRIPCION */
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  /* ESTILO DEL CONTENEDOR GENERAL QUE ABRAZA LAS 3 FILAS */
+
+  #letras-guiones {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+  }
+  
+  /*  ALINEACION DEL CONTENEDOR DE LOS BOTONES */
+
+  #contenedor-letras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contenedor-letras .fila {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*  ESTILO DEL BOTON DE CADA LETRA */
+
+  .letra {
+    font-size: 30px;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border: 4px solid black;
+    background-color: #ABDEE6;
+    cursor: pointer;
+  }
+  
+  /* ESTILOS DEL BOTON DE CADA LETRA AL PASAR EL RATON POR ENCIMA */
+
+  .letra:hover {
+    background-color: black;
+    color: white;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Resultado has ganado o has perdido */
+
+  #resultado-final {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Estilos para el botón de volver a jugar */
+
+  #reintentar {
+    display: none;
+    font-family: 'Fjalla One';
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Estilos para los botones de dificultad */
+
+  #botones-dificultad {
+    text-align: center;
+
+    margin-top: 20px;
+  }

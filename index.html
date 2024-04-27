@@ -1,0 +1,79 @@
+<!-- David Tinaut Martinez-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>El Ahorcado</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>AHORCADO - IRONHACK PROYECTO FINAL</h1>
+    <h2> Selecciona una dificultad, tienes 6 intentos para adivinar el animal.</h2>
+
+    <!-- Botones de dificultad -->
+    
+    <div id="botones-dificultad">
+      <button onclick="establecerDificultad('facil')">Fácil</button>
+      <button onclick="establecerDificultad('medio')">Medio</button>
+      <button onclick="establecerDificultad('dificil')">Difícil</button>
+    </div>
+
+    <div id="letras-guiones"></div>
+    <h2>Te quedan un total de <span id="intentos-restantes">6</span> intentos.</h2>
+
+    <div id="contenedor-letras">
+
+  <!-- Botones para las letras -->
+
+  <div class="fila">
+    <button class="letra" onclick="adivinaLetra('q')">Q</button>
+    <button class="letra" onclick="adivinaLetra('w')">W</button>
+    <button class="letra" onclick="adivinaLetra('e')">E</button>
+    <button class="letra" onclick="adivinaLetra('r')">R</button>
+    <button class="letra" onclick="adivinaLetra('t')">T</button>
+    <button class="letra" onclick="adivinaLetra('y')">Y</button>
+    <button class="letra" onclick="adivinaLetra('u')">U</button>
+    <button class="letra" onclick="adivinaLetra('i')">I</button>
+    <button class="letra" onclick="adivinaLetra('o')">O</button>
+    <button class="letra" onclick="adivinaLetra('p')">P</button>
+  </div>
+  <div class="fila">
+    <button class="letra" onclick="adivinaLetra('a')">A</button>
+    <button class="letra" onclick="adivinaLetra('s')">S</button>
+    <button class="letra" onclick="adivinaLetra('d')">D</button>
+    <button class="letra" onclick="adivinaLetra('f')">F</button>
+    <button class="letra" onclick="adivinaLetra('g')">G</button>
+    <button class="letra" onclick="adivinaLetra('h')">H</button>
+    <button class="letra" onclick="adivinaLetra('j')">J</button>
+    <button class="letra" onclick="adivinaLetra('k')">K</button>
+    <button class="letra" onclick="adivinaLetra('l')">L</button>
+    <button class="letra" onclick="adivinaLetra('ñ')">Ñ</button>
+  </div>
+  <div class="fila">
+    <button class="letra" onclick="adivinaLetra('z')">Z</button>
+    <button class="letra" onclick="adivinaLetra('x')">X</button>
+    <button class="letra" onclick="adivinaLetra('c')">C</button>
+    <button class="letra" onclick="adivinaLetra('v')">V</button>
+    <button class="letra" onclick="adivinaLetra('b')">B</button>
+    <button class="letra" onclick="adivinaLetra('n')">N</button>
+    <button class="letra" onclick="adivinaLetra('m')">M</button>
+  </div>
+</div>
+
+<!-- Resultado final (has ganado o perdido) -->
+<div id="resultado-final"></div>
+
+<!-- Botón para reiniciar la partida -->
+
+<button id="reintentar" onclick="resetearPartida()" style="display: none;">INTENTAR DE NUEVO</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
